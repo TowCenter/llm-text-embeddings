@@ -9,9 +9,6 @@ matplotlib
 # Progress bars
 tqdm
 
-# Local embeddings (no API key needed, ~80 MB download on first run)
-sentence-transformers
-
 # Tokenization (used to filter out articles that are too long)
 tiktoken
 
