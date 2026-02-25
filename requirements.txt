@@ -20,3 +20,7 @@ plotly
 
 # Jupyter notebook support
 ipywidgets
+ipykernel
+
+# OpenAI API client
+openai
