@@ -4,6 +4,7 @@
     "context": "..",
     "dockerfile": "Dockerfile"
   },
+  "postCreateCommand": "echo \"OPENAI_API_KEY=${OPENAI_API_KEY}\" > .env",
   "customizations": {
     "vscode": {
       "settings": {

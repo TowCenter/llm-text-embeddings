@@ -25,3 +25,6 @@ ipykernel
 
 # OpenAI API client
 openai
+
+# Load environment variables from .env
+python-dotenv
