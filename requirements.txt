@@ -12,8 +12,8 @@ tqdm
 # Tokenization (used to filter out articles that are too long)
 tiktoken
 
-# Dimensionality reduction + clustering
-scikit-learn
+# Dimensionality reduction + clustering (HDBSCAN requires >=1.3)
+scikit-learn>=1.3
 
 # Interactive charts
 plotly
