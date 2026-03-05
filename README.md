@@ -18,30 +18,4 @@ OPENAI_API_KEY=""
 
 Open **semantic-map.ipynb**. For the demo, no changes should be needed.
 
-**If you have your own data**, in CSV/JSON/TXT format, you can change the fields to fit parameters.
-
-You'll also want to comment out this code block to run the data loading:
-
-```
-# --- Option A: Load from a CSV file ---
-# df = pd.read_csv("data/your_file.csv")
-# print(f"Loaded {len(df):,} rows from CSV")
-```
-
-Comment out or delete this code
-
-```
-# --- Option B: Load data from .txt files — one document per file ---
-records = []
-for fname in sorted(os.listdir(DATA_DIR)):
-    if fname.endswith(".txt"):
-        fpath = os.path.join(DATA_DIR, fname)
-        with open(fpath, "r", encoding="utf-8") as f:
-            content = f.read().strip()
-        records.append({"filename": os.path.splitext(fname)[0], "text": content})
-
-
-df = pd.DataFrame(records)
-print(f"Loaded {len(df):,} documents from '{DATA_DIR}'")
-df.head()
-```
+**If you have your own data** in CSV format, update the configuration cell at the top of the notebook with your file path and column names. The notebook loads a CSV by default (Option A). If your data is a folder of `.txt` files instead, comment out Option A and uncomment Option B in the data loading cell.
